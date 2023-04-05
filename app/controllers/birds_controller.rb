@@ -3,7 +3,7 @@ class BirdsController < ApplicationController
   # GET /birds
   def index
     birds = Bird.all
-    render json: birds
+    render json: birds, status: :ok
   end
 
   # GET /birds/:id
